@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import time
 import random
 
@@ -20,6 +19,7 @@ with headers:
 
     number_of_cards = st.slider('# of cards', 1, 12, 1)
     card_list = [i for i in range(1,number_of_cards + 1)]
+
     
     if st.button('Shuffle & Draw'):
         st.write("Shuffling...")
