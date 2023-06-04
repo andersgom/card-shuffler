@@ -10,11 +10,13 @@ model_training = st.container()
 with headers:
     st.title('Card Shuffler',)
     st.subheader("""A card-shuffling app for your card-shuffling needs.🃏""")
-    st.markdown("""Have you ever played a board game via Teams and realised that the cards you
-    have to shuffle are in a very inconvenient pdf file? This app is exactly what you need.""" , unsafe_allow_html=False)
+    st.markdown("""Have you ever played a board game via Teams and realized that
+    the cards you have to shuffle are in a very inconvenient PDF file?
+    This app is exactly what you need.""" , unsafe_allow_html=False)
     st.markdown("""Instructions:✨""", unsafe_allow_html=False)
     st.markdown("""**1.** Use the slider to select the number of cards you have.""", unsafe_allow_html=False)
     st.markdown("""**2.** Click on **Shuffle & Draw** to receive your card.""", unsafe_allow_html=False)
+    st.markdown("""**3.** Click on **Reset** when you´re ready to draw another one.""", unsafe_allow_html=False)
 
 
     number_of_cards = st.slider('# of cards', 1, 12, 1)
